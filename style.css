@@ -24,7 +24,7 @@ body{
 /* header */
 
 header{
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -35,6 +35,10 @@ header{
     align-items: center;
     z-index: 100;
     background-color: #0c2c42;
+}
+
+#menu__icon{
+    display: none;
 }
 
 #logo{
@@ -61,7 +65,7 @@ a.active{
 /* home */
 
 .home{
-    margin-top: 7%;
+    padding-top: 12%;
     width: 70%;
     padding-left: 10%;
     /* display: flex; */
@@ -202,9 +206,10 @@ a.active{
 
 .services__menu{
     max-width: 30%;
-    height: 1000vh;
+    height: 142vh;
     background-color: var(--color-3);
     float: left;
+    overflow-y: auto;
 }
 
 .services__menu a{
@@ -280,3 +285,4 @@ a.active{
     border: 2px solid var(--color-3);
     transition: .2s;
 }
+

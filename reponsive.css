@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1023px){
+
+}
+
+@media only screen and (max-width: 700px){
+
+    #menu__icon{
+        display: block;
+        /* position: relative; */
+    }
+
+    .navbar{
+        display: none;
+        float: left;
+        top: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        background-color: #0c2c42;
+        padding: 20px 0px;
+        justify-content: center;
+    }
+    
+    #logo{
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        
+    }
+
+    .home{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 20%;
+        padding-right: 20%;
+    }
+
+    .home__content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .home__content p{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .btn__box{
+        display: inline-block;
+    }
+
+    .home__icon{
+        display: inline-block;
+        width: 100%;
+    }
+
+}
