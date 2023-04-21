@@ -7,6 +7,7 @@
 :root{
     --color-1: #081b29;
     --color-2: #00ffff;
+    --color-3: #0c2c42;
 }
 
 body{
@@ -15,14 +16,15 @@ body{
     background: url(wp1904057.png) no-repeat;
     background-size: cover;
     background-position: center;
-    /* height: 68.4vh; */
-    height: 74.69vh;
+    /* height: 74.69vh; */
+    /* overflow: hidden; */
+    height: 100vh;
 }
 
 /* header */
 
 header{
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -32,6 +34,7 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #0c2c42;
 }
 
 #logo{
@@ -58,7 +61,7 @@ a.active{
 /* home */
 
 .home{
-    margin-top: 12%;
+    margin-top: 7%;
     width: 70%;
     padding-left: 10%;
     /* display: flex; */
@@ -156,9 +159,8 @@ a.active{
 .home__icon a{
     width: 7%;
     display: inline-flex;
-    background-color: transparent;
     border: 2px solid var(--color-2);
-    background-color: transparent;
+    background-color: #184766;
     border-radius: 50%;
     margin-right: 5%;
     justify-content: center;
@@ -194,4 +196,87 @@ a.active{
 
 .home__icon a:hover::before{
     width: 100%;
+}
+
+/* services */
+
+.services__menu{
+    max-width: 30%;
+    height: 1000vh;
+    background-color: var(--color-3);
+    float: left;
+}
+
+.services__menu a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-3);
+    text-decoration: none;
+    font-weight: 200;
+    color: var(--color-2);
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.services__menu a:hover{
+    background-color: var(--color-2);
+    color: var(--color-3);
+    font-weight: bold;
+}
+
+.services__content{
+    max-width: 100%;
+    /* background-color: red; */
+}
+
+.services__content h1{
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.services__product{
+    background-color: var(--color-3);
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 10px 0px;
+    padding-bottom: 50px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+.services__product img{
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#hotro{
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.services__product h3{
+    margin-bottom: 10px;
+}
+
+.services__product a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-weight: 1000;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--color-2);
+}
+
+.services__product a:hover{
+    color: var(--color-1);
+    background-color: var(--color-2);
+    border: 2px solid var(--color-3);
+    transition: .2s;
 }
