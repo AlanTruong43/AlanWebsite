@@ -210,6 +210,7 @@ a.active{
     background-color: var(--color-3);
     float: left;
     overflow-y: auto;
+    padding-top: 90px;
 }
 
 .services__menu a{
@@ -233,6 +234,7 @@ a.active{
 .services__content{
     max-width: 100%;
     /* background-color: red; */
+    padding-top: 90px;
 }
 
 .services__content h1{
